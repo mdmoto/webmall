@@ -1,10 +1,10 @@
 
 const Cookie = require('js-cookie')
 module.exports = {
-  title:Cookie.get('siteName') || 'lilishop', //配置显示在浏览器标签的title、底部信息、部分信息展示的值
+  title:Cookie.get('siteName') || '喵乐商城', //配置显示在浏览器标签的title、底部信息、部分信息展示的值
   icpCard: "", // icp证
   company: {
-    href: "https://pickmall.cn",
+    href: "https://maollar.com",
     name: "北京宏业汇成科技有限公司",
   }, //公司信息
   icpMessage: "京ICP备20009696号-1", //icp备案
