@@ -43,10 +43,10 @@ export default {
           // 存放过期时间
           storage.setItem("sitelogo_expiration_time", expirationTime);
           // 存放信息
-          storage.setItem('siteName', data.siteName);
-          storage.setItem('logoImg', data.buyerSideLogo);
-          storage.setItem("siteIcon",data.buyerSideIcon);
-          window.document.title = data.siteName;
+          storage.setItem('siteName', data.siteName || '喵乐商城');
+          storage.setItem('logoImg', data.buyerSideLogo || require('@/assets/images/logo-maollar.png'));
+          storage.setItem("siteIcon",data.buyerSideIcon || require('@/assets/images/logo-maollar-mark.png'));
+          window.document.title = data.siteName || '喵乐商城';
           //动态获取icon
           let link =document.querySelector("link[rel*='icon']") ||document.createElement("link");
           link.type = "image/x-icon";

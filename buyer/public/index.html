@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name='description' content='喵乐商城（maollar），官方网站 maollar.com'>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>logo.ico">
-    <meta name="keywords" content="喵乐商城,maollar,在线商城">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="apple-touch-icon" href="<%= BASE_URL %>apple-touch-icon.png">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="keywords" content="喵乐商城,maollar,在线商城">
     <% for(var css of htmlWebpackPlugin.options.cdn.css) { %>
       <link rel="stylesheet" href="<%=css%>" />
       <% } %>
