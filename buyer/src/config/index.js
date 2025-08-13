@@ -5,9 +5,9 @@ module.exports = {
   icpCard: "", // icp证
   company: {
     href: "https://maollar.com",
-    name: "北京宏业汇成科技有限公司",
+    name: "喵喵株式会社",
   }, //公司信息
-  icpMessage: "京ICP备20009696号-1", //icp备案
+  icpMessage: "日ICP备：暂未备案", //icp备案
   /**
    * 高德地图申请链接
    * https://lbs.amap.com/api/javascript-api/guide/abc/prepare
@@ -22,6 +22,6 @@ module.exports = {
   inputMaxLength:'140', //全局输入框默认最大输入长度字
 
 
-  PC_DOMAIN: "https://pc-b2b2c.pickmall.cn", // PC端域名
-  WAP_DOMAIN: "https://m-b2b2c.pickmall.cn", // WAP端域名
+  PC_DOMAIN: "https://shop.maollar.com", // PC端域名
+  WAP_DOMAIN: "https://www.maollar.com", // WAP端域名
 };
