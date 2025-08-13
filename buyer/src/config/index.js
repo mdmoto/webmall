@@ -22,6 +22,6 @@ module.exports = {
   inputMaxLength:'140', //全局输入框默认最大输入长度字
 
 
-  PC_DOMAIN: "https://pc-b2b2c.pickmall.cn", // PC端域名
-  WAP_DOMAIN: "https://m-b2b2c.pickmall.cn", // WAP端域名
+  PC_DOMAIN: "https://shop.maollar.com", // PC端域名
+  WAP_DOMAIN: "https://www.maollar.com", // WAP端域名
 };
