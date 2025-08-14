@@ -3,7 +3,6 @@
     <router-view />
   </div>
 </template>
-
 <script>
 import storage from "@/plugins/storage";
 import { getBaseSite } from "@/api/common.js";
@@ -44,13 +43,20 @@ export default {
           storage.setItem("sitelogo_expiration_time", expirationTime);
           // 存放信息
           storage.setItem('siteName', data.siteName || '喵乐商城');
-          storage.setItem('logoImg', data.buyerSideLogo || require('@/assets/images/logo-maollar.png'));
-          storage.setItem("siteIcon",data.buyerSideIcon || require('@/assets/images/logo-maollar-mark.png'));
+          
+          // ✅ 关键修改：强制使用本地logo，忽略API返回的logo
+          storage.setItem('logoImg', require('@/assets/images/logo2.png'));
+          
+          // ✅ 关键修改：强制使用本地icon，忽略API返回的icon
+          storage.setItem("siteIcon", require('@/assets/images/logo2.png')); // 或者使用专门的icon文件
+          
           window.document.title = data.siteName || '喵乐商城';
-          //动态获取icon
+          
+          //动态获取icon - 使用本地icon
           let link =document.querySelector("link[rel*='icon']") ||document.createElement("link");
           link.type = "image/x-icon";
-          link.href = data.buyerSideIcon;
+          // ✅ 使用本地icon而不是API返回的icon
+          link.href = require('@/assets/images/logo2.png'); // 或者使用专门的favicon文件
           link.rel = "shortcut icon";
           document.getElementsByTagName("head")[0].appendChild(link);
         }
